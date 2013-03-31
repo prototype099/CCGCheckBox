@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCs-IG-nWS" customClass="CCGCheckBox">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="chkPressed:" destination="2" eventType="touchUpInside" id="Nu2-G0-IuS"/>
+                                    <action selector="chkValueChanged:" destination="2" eventType="valueChanged" id="0IB-Rn-5QH"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KCs-IG-nWS" firstAttribute="top" secondItem="3" secondAttribute="top" constant="43" id="JCw-Kk-x0S"/>
+                            <constraint firstAttribute="trailing" secondItem="KCs-IG-nWS" secondAttribute="trailing" constant="59" id="T1a-hB-8Ml"/>
+                            <constraint firstItem="KCs-IG-nWS" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="75" id="Wel-sy-eXO"/>
+                            <constraint firstAttribute="bottom" secondItem="KCs-IG-nWS" secondAttribute="bottom" constant="384" id="lPa-yb-37V"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chk" destination="KCs-IG-nWS" id="mdy-a1-HQ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>

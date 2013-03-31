@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CCGCheckBox.h"
 
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet CCGCheckBox *chk;
+
+- (IBAction)chkValueChanged:(id)sender;
+- (IBAction)chkPressed:(id)sender;
 
 @end

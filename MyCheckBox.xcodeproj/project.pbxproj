@@ -18,6 +18,7 @@
 		825671761707FFD4006D983B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 825671751707FFD4006D983B /* Default-568h@2x.png */; };
 		825671791707FFD4006D983B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825671771707FFD4006D983B /* MainStoryboard.storyboard */; };
 		8256717C1707FFD4006D983B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8256717B1707FFD4006D983B /* ViewController.m */; };
+		82567184170801E4006D983B /* CCGCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 82567183170801E4006D983B /* CCGCheckBox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		825671781707FFD4006D983B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8256717A1707FFD4006D983B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8256717B1707FFD4006D983B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		82567182170801E4006D983B /* CCGCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGCheckBox.h; sourceTree = "<group>"; };
+		82567183170801E4006D983B /* CCGCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGCheckBox.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				8256717A1707FFD4006D983B /* ViewController.h */,
 				8256717B1707FFD4006D983B /* ViewController.m */,
 				825671661707FFD4006D983B /* Supporting Files */,
+				82567182170801E4006D983B /* CCGCheckBox.h */,
+				82567183170801E4006D983B /* CCGCheckBox.m */,
 			);
 			path = MyCheckBox;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				8256716C1707FFD4006D983B /* main.m in Sources */,
 				825671701707FFD4006D983B /* AppDelegate.m in Sources */,
 				8256717C1707FFD4006D983B /* ViewController.m in Sources */,
+				82567184170801E4006D983B /* CCGCheckBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
